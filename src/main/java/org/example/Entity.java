@@ -6,6 +6,9 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Базовый класс для сущностей с переопределенным методом toString.
+ */
 public class Entity {
     @Override
     public String toString() {
@@ -31,9 +34,7 @@ public class Entity {
                         fieldStrings.add(field.getName() + "=ERROR");
                     }
                 }
-
             }
-
 
             if (allFieldsExcluded) {
                 if (currentClass.getSuperclass() != null) {

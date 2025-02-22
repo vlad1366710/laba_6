@@ -2,7 +2,10 @@ package org.example;
 
 import org.example.Annotations.Validate;
 
-@Validate(value = {String.class, Integer.class}) // Аннотируем класс с указанием классов для валидации
+/**
+ * Пример класса с аннотацией @Validate.
+ */
+@Validate(value = {String.class, Integer.class})
 public class User {
     private String username;
     private int age;
@@ -12,5 +15,3 @@ public class User {
         this.age = age;
     }
 }
-
-

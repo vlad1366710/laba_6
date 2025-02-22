@@ -2,6 +2,9 @@ package org.example;
 
 import org.example.Annotations.ToString;
 
+/**
+ * Пример класса с аннотацией @ToString.
+ */
 @ToString
 public class Person {
     @ToString(value = "NO")

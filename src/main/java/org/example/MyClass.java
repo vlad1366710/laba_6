@@ -2,6 +2,9 @@ package org.example;
 
 import org.example.Annotations.Default;
 
+/**
+ * Пример класса с аннотацией @Default.
+ */
 @Default(value = String.class)
 public class MyClass {
     @Default(value = Integer.class)
